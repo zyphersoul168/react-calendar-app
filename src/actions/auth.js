@@ -70,15 +70,15 @@ export const startLogout = () => {
 };
 
 // sync actions
-const setCheckingFinish = () => ({
+export const setCheckingFinish = () => ({
   type: types.authCheckingFinish,
 });
 
-const login = (user) => ({
+export const login = (user) => ({
   type: types.authLogin,
   payload: user,
 }); 
 
-const logout = () => ({
+export const logout = () => ({
   type: types.authLogout,
 });

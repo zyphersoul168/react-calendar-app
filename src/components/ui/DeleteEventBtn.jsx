@@ -13,7 +13,7 @@ export const DeleteEventBtn = () => {
   };
   
   return (
-    <button onClick={handleDelete} className="bg-red-400 p-2.5 border font-bold rounded-md text-alabaster flex justify-center w-full transition ease-in">
+    <button onClick={handleDelete} className="bg-red-400 hover:bg-red-500 p-2.5 font-bold rounded-md text-gray-50 flex justify-center w-full transition ease-in">
       <TrashIcon className="mt-0.5 mr-1 w-6 h-6" />
       <span>Delete</span>
     </button>

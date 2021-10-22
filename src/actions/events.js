@@ -61,7 +61,6 @@ export const eventStartUpdate = (event) => {
 export const eventStartDelete = () => {
   return async (dispatch, getState) => {
     const { _id } = getState().calendar.activeEvent;
-    dispatch(eventDeleted());
 
     try {
       const resp =  await fetchWithToken(`events/${_id}`, {}, "DELETE");

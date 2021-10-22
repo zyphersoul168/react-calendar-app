@@ -32,15 +32,15 @@ export const SignupPage = () => {
 
   return (
     <div className="flex flex-row-reverse relative items-center left-16">
-      <div className="absolute -left-32 z-10 space-y-8 bg-gray-100 border border-dark-lava p-10 rounded-lg shadow-lg">
-        <h1 className="text-dark-lava font-abril text-6xl">
-          Sign <span className="text-melon">up</span>
+      <div className="absolute lg:-left-32 xs:-left-0 z-10 space-y-8 bg-gray-100 border border-dark-lava p-10 rounded-lg shadow-lg">
+        <h1 className="text-gray-800 font-abril text-6xl">
+          Sign <span className="text-purple-500">up</span>
         </h1>
         {/* <hr className="bg-dark-lava border-0 h-0.5" /> */}
         <div>
           <form onSubmit={handleSignup} className="space-y-3">
             <input
-              className="block p-2 bg-gray-200 focus:outline-none placeholder-middle-gray text-dark-lava rounded-md w-full"
+              className="block p-2 bg-gray-200 focus:outline-none placeholder-gray-400 text-gray-700 rounded-md w-full"
               type="text"
               name="name"
               placeholder="Name"
@@ -48,7 +48,7 @@ export const SignupPage = () => {
               onChange={handleInputChange}
             />
             <input
-              className="block p-2 bg-gray-200 focus:outline-none placeholder-middle-gray text-dark-lava rounded-md w-full"
+              className="block p-2 bg-gray-200 focus:outline-none placeholder-gray-400 text-gray-700 rounded-md w-full"
               type="email"
               name="email"
               placeholder="Email"
@@ -56,7 +56,7 @@ export const SignupPage = () => {
               onChange={handleInputChange}
             />
             <input
-              className="block p-2 bg-gray-200 focus:outline-none placeholder-middle-gray text-dark-lava rounded-md w-full"
+              className="block p-2 bg-gray-200 focus:outline-none placeholder-gray-400 text-gray-700 rounded-md w-full"
               type="password"
               name="password"
               placeholder="Password"
@@ -64,7 +64,7 @@ export const SignupPage = () => {
               onChange={handleInputChange}
             />
             <input
-              className="block p-2 bg-gray-200 focus:outline-none placeholder-middle-gray text-dark-lava rounded-md w-full"
+              className="block p-2 bg-gray-200 focus:outline-none placeholder-gray-400 text-gray-700 rounded-md w-full"
               type="password"
               name="password2"
               placeholder="Confirm password"
@@ -72,17 +72,17 @@ export const SignupPage = () => {
               onChange={handleInputChange}
             />
             <button
-              className="block font-bold p-2 bg-melon text-dark-lava w-full rounded-md"
+              className="block font-bold p-2 bg-yellow-200 hover:bg-yellow-300 text-gray-800 w-full rounded-md transition ease-in"
               type="submit"
             >
               Sign up
             </button>
           </form>
           <div className="mt-2">
-            <p className="text-dark-lava">
+            <p className="text-gray-800">
               Already have an account?{" "}
               <Link to="/auth/login">
-                <span className="text-melon font-bold">Log in</span>
+                <span className="text-pink-400 font-bold">Log in</span>
               </Link>
             </p>
           </div>

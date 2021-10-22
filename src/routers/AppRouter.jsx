@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import {
   Redirect,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
 } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export const AppRouter = () => {
   }
 
   return (
-    <Router>
+    <Router >
       <div>
         <Switch>
           <PublicRouter

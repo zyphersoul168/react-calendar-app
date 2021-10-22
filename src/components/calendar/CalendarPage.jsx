@@ -66,7 +66,7 @@ export const CalendarPage = () => {
 
   const eventStyleGetter = (event, start, end, isSelected) => {
     const style = {
-      backgroundColor: uid === event.user._id ? "#e0afa0" : "#463f3a",
+      backgroundColor: uid === event.user._id ? "#10B981" : "#6366F1",
       borderWidth: 0,
       color: "#f4f3ee",
       display: "block",
@@ -78,7 +78,7 @@ export const CalendarPage = () => {
   };
 
   return (
-    <div>
+    <div className="calendar-screen">
       <Navbar />
       <div className="mt-6">
         <AddNewFab />
